@@ -1,0 +1,15 @@
+{
+  "name": "netframe-http-server",
+  "version": "1.0.0",
+  "description": "Creative HTTP/1.1 server framework built with Node.js net (Full Stack PS1)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["http", "net", "tcp", "framework", "full-stack"],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  }
+}
