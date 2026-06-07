@@ -207,6 +207,45 @@ body.page {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+.hero__media {
+    margin: 2rem 0 0;
+    max-width: 480px;
+}
+
+.hero__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: var(--shadow);
+    animation: imageReveal 0.9s ease both;
+    transition: transform 0.3s ease;
+}
+
+.hero__media img:hover {
+    transform: scale(1.02) rotate(-0.5deg);
+}
+
+.hero__media figcaption {
+    margin-top: 0.6rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+@keyframes imageReveal {
+    from {
+        opacity: 0;
+        transform: scale(0.96) translateY(12px);
+        filter: blur(6px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+    }
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -276,6 +315,33 @@ body.page {
 
 .timeline li {
     margin-bottom: 0.75rem;
+}
+
+.guest-hero {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+
+.guest-hero img {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow: var(--shadow);
+    animation: imageReveal 0.9s ease both;
+    transition: transform 0.3s ease;
+}
+
+.guest-hero img:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+.guest-hero figcaption {
+    margin-top: 0.6rem;
+    color: var(--muted);
+    font-size: 0.85rem;
 }
 
 .guest-form {

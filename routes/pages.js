@@ -19,6 +19,10 @@ function registerPageRoutes(app) {
               <a class="btn btn--primary" href="/guestbook">Open guestbook</a>
               <a class="btn btn--ghost" href="/api/dogs/taiyo">Taiyo JSON API</a>
             </div>
+            <figure class="hero__media">
+              <img src="/images/taiyo.png" alt="Taiyo the puppy" loading="lazy">
+              <figcaption>Served as a static file from <code>public/images/</code></figcaption>
+            </figure>
           </section>
           <section class="card-grid stagger">
             <article class="card card--lift">
@@ -127,6 +131,10 @@ function registerPageRoutes(app) {
           <section class="panel">
             <p class="eyebrow">Creative feature</p>
             <h1>Taiyo guestbook</h1>
+            <figure class="guest-hero">
+              <img src="/images/taiyo.png" alt="Taiyo the Golden Retriever puppy" loading="lazy">
+              <figcaption>Leave a message for Taiyo</figcaption>
+            </figure>
             <p class="lede">POST JSON to <code>/api/guestbook</code> or use the form below.</p>
             <form class="guest-form" id="guestbook-form">
               <label>Name<input name="author" required maxlength="40" placeholder="Your name"></label>

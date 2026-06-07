@@ -5,7 +5,8 @@ function registerApiRoutes(app) {
         res.json({
             name: 'Taiyo',
             age: '4 months',
-            type: 'Puppy',
+            type: 'a Golden Retriever Puppy',
+            photo: '/images/taiyo.png',
             diet: ['High-quality puppy kibble', 'Eggs (safe in moderation)'],
             walkingRoutine: 'Short walks to protect developing joints',
         });
