@@ -17,7 +17,6 @@ function registerPageRoutes(app) {
             </p>
             <div class="hero__actions">
               <a class="btn btn--primary" href="/guestbook">Open guestbook</a>
-              <a class="btn btn--ghost" href="/api/dogs/taiyo">Taiyo JSON API</a>
             </div>
             <figure class="hero__media">
               <img src="/images/taiyo.png" alt="Taiyo the puppy" loading="lazy">
